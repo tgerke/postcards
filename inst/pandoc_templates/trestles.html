@@ -44,6 +44,19 @@
                   $endfor$
                 </ul>
               </div>
+              <div id="icon-list">
+                <ul class="list-inline">
+                  $for(links-row2)$
+                  <li class="list-inline-item">
+                    <a href=$links-row2.url$>
+                      <button type="button" class="btn btn-outline-dark mb-2">
+                        $links-row2.label$
+                      </button>
+                    </a>
+                  </li>
+                  $endfor$
+                </ul>
+              </div>
             </div>
           </div>
         </div>
