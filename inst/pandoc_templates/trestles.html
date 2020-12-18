@@ -28,6 +28,15 @@
             </div>
             <div class="p-2">
               <h2>$title$</h2>
+              <div class="title-descriptions">
+                $for(titles/allbutlast)$
+                  <font class="highlight-secondary">$titles.description$</font>
+                  <font class="highlight"> :: </font>
+                $endfor$
+                $for(titles/last)$
+                  <font class="highlight-secondary">$titles.description$</font>
+                $endfor$
+              </div>
             </div>
             <hr style="width:60%;"/>
             <div class="p-2">
