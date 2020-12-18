@@ -99,26 +99,29 @@
             <hr style="width:60%;"/>
 
             <div class="row justify-content-center align-items-center">
-              <div class="col-8 p-1 text-center">
-                <div class="list-group">
+              <div class="col-sm-8 p-1 text-center">
+                <ul class="list-inline">
                   $for(links)$
-                  <a href=$links.url$>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
-                      $links.label$
-                    </button>
-                  </a>
+                  <li class="list-inline-item">
+                    <a href=$links.url$>
+                      <button type="button" class="btn btn-outline-dark mb-2">
+                        $links.label$
+                      </button>
+                    </a>
+                  </li>
                   $endfor$
-                </div>
-                <div class="list-group">
+                </ul>
+                <ul class="list-inline">
                   $for(links-row2)$
-                  <a href=$links-row2.url$>
-                    <button type="button" class="list-group-item list-group-item-action my-1 rounded">
-                      $links-row2.label$
-                    </button>
-                  </a>
+                  <li class="list-inline-item">
+                    <a href=$links-row2.url$>
+                      <button type="button" class="btn btn-outline-dark mb-2">
+                        $links-row2.label$
+                      </button>
+                    </a>
+                  </li>
                   $endfor$
-                </div>
-              </div>
+                </ul>
             </div>
             <div class="p pt-4 px-5">
               $body$
